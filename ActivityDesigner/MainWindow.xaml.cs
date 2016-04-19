@@ -41,12 +41,12 @@ namespace ActivityDesigner
 
         private void cmdLoad_Click(object sender, RoutedEventArgs e)
         {
-            //_viewModel.LoadClicked();
+            _viewModel.LoadClicked();
         }
 
         private void cmdSave_Click(object sender, RoutedEventArgs e)
         {
-            //_viewModel.SaveClicked();
+            _viewModel.SaveClicked();
         }
     }
 }
