@@ -18,6 +18,7 @@ namespace WorkflowServiceManager.AcceptanceTests
         {
             var client = new HttpClient();
             client.BaseAddress = new Uri(BASE_ADDRESS);
+            
             return client;
         }
     }

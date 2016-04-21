@@ -9,8 +9,14 @@ namespace WorkflowServiceManager.API.Controllers
 {
     public class WorkflowController : ApiController
     {
-        public object Get() {
-            return "hellow world";
+        private static readonly List<WorkflowDefinition> _definitions = new List<WorkflowDefinition>();
+
+        public IEnumerable<WorkflowDefinition> Get() {
+            return _definitions;
+        }
+
+        public void Post(WorkflowDefinition definition) {
+            _definitions.Add(definition);
         }
     }
 }
