@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActivityDesigner", "ActivityDesigner\ActivityDesigner.csproj", "{269C620D-23F8-4391-8FA8-8474935DD27A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowServiceManager.API", "WorkflowServiceManager.API\WorkflowServiceManager.API.csproj", "{E98AF88A-05C4-4812-BC2B-5CF6061AFF50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowServiceManager.APITests", "WorkflowServiceManager.APITests\WorkflowServiceManager.APITests.csproj", "{42DF6586-4D38-4F07-8688-D5F2DF95D2A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowServiceManager.AcceptanceTests", "WorkflowServiceManager.AcceptanceTests\WorkflowServiceManager.AcceptanceTests.csproj", "{A82CEA45-4B15-4C62-BB64-C6166361D57D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{269C620D-23F8-4391-8FA8-8474935DD27A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{269C620D-23F8-4391-8FA8-8474935DD27A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{269C620D-23F8-4391-8FA8-8474935DD27A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E98AF88A-05C4-4812-BC2B-5CF6061AFF50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E98AF88A-05C4-4812-BC2B-5CF6061AFF50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E98AF88A-05C4-4812-BC2B-5CF6061AFF50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E98AF88A-05C4-4812-BC2B-5CF6061AFF50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42DF6586-4D38-4F07-8688-D5F2DF95D2A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42DF6586-4D38-4F07-8688-D5F2DF95D2A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42DF6586-4D38-4F07-8688-D5F2DF95D2A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42DF6586-4D38-4F07-8688-D5F2DF95D2A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A82CEA45-4B15-4C62-BB64-C6166361D57D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A82CEA45-4B15-4C62-BB64-C6166361D57D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A82CEA45-4B15-4C62-BB64-C6166361D57D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A82CEA45-4B15-4C62-BB64-C6166361D57D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
