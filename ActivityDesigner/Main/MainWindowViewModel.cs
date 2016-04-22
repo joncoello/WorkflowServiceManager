@@ -4,6 +4,7 @@ using System.Activities;
 using System.Activities.Presentation;
 using System.Activities.Presentation.Toolbox;
 using System.Activities.Statements;
+using System.Activities.XamlIntegration;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
@@ -32,7 +33,7 @@ namespace ActivityDesigner
 
         private void FireProeprtyChanged(string propertyName)
         {
-            if (PropertyChanged!=null)
+            if (PropertyChanged != null)
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
@@ -75,19 +76,15 @@ namespace ActivityDesigner
             MessageBox.Show("Done");
         }
 
-        public void LoadClicked()
+        public void LoadClicked(string xaml)
         {
             SetupDesigner(false);
-            var ofd = new OpenFileDialog();
-            ofd.Filter = "Xaml File | *.xaml";
-            ofd.InitialDirectory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Activities");
-            var result = ofd.ShowDialog();
-            if (result.HasValue && result.Value)
-            {
-                Designer.Load(ofd.FileName);
-            }
-            PropertyInspector = Designer.PropertyInspectorView;
+
+            Designer.Text = xaml;
+            Designer.Load();
             
+            PropertyInspector = Designer.PropertyInspectorView;
+
         }
     }
 }

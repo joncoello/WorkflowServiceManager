@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Web.Http;
 
 [assembly: InternalsVisibleTo("WorkflowServiceManager.AcceptanceTests")]
+[assembly: InternalsVisibleTo("WorkflowServiceManager.APIHost")]
 
 namespace WorkflowServiceManager.API
 {

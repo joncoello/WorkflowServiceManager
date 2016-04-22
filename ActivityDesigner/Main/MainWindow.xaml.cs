@@ -41,12 +41,20 @@ namespace ActivityDesigner
 
         private void cmdLoad_Click(object sender, RoutedEventArgs e)
         {
-            _viewModel.LoadClicked();
+            //_viewModel.LoadClicked();
+            var vm = new Find.FindDefinitionViewModel();
+            var window = new Find.FindDefinition(vm);
+            window.ShowDialog();
+            _viewModel.LoadClicked(vm.SelectedDefinition.Definition);
         }
 
         private void cmdSave_Click(object sender, RoutedEventArgs e)
         {
-            _viewModel.SaveClicked();
+            //_viewModel.SaveClicked();
+            _viewModel.Designer.Flush();
+            var definition = _viewModel.Designer.Text;
+            var window = new Save.SaveDefinition(definition);
+            window.ShowDialog();
         }
     }
 }
